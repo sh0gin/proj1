@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script src="assets/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="container-header">
+            <a href="index.html">
+                <div class="logo-img" aria-label="логотип компании"></div>
+            </a>
+            <input id='burger-toggle' type="checkbox">
+            <label for="burger-toggle" class="burger-label">
+                <span class="burger-span"></span>
+            </label>
+
+            <nav class="nav-header">
+                <ul class="ul-header">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="account.html">Личний кабинет</a></li>
+                    <li><a href="catalog.html">Каталог игр</a></li>
+                    <li><a href="admin.html">Административная панель</a></li>
+                    <li><a href="light.html">light</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                    <li><a href="login.html">Вход</a></li>
+                </ul>
+            </nav>
+
+            <!-- <div class="burger"> -->
+
+            <!-- </div> -->
+        </section>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Авторизация</h2>
+    
+            <article class="form">
+                        <form action="#" method="post" class="form__section">
+                            <div class="form__field">
+                                <input class="form-control is-invalid" id="email" name="email" type="email" placeholder="E-mail *" value="abiba">
+                                <div class="invalid__feedback">
+                                    <p>Некорректный e-mail адрес</p>
+                                </div>
+                                <div class="valid__feedback">
+                                    <p>Пример успеха</p>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <input class="form-control" id="password" name="password" type="password" placeholder="Пароль *">
+                                <div class="invalid__feedback">
+                                    <p>Пример ошибки</p>
+                                </div>
+                                <div class="valid__feedback">
+                                    <p>Пример успеха</p>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <input type="submit" value="Зарегистрироваться" class="send-form primary">
+                        </form>
+                    </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
