@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --containerWidth:
+}
+
 body {
     background-color: black;
 }
@@ -19,6 +23,14 @@ body {
     background-position: center;
     padding-left: 15px;
 }
+
+/* header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+} */
 
 .container-header {
     display: flex;
@@ -37,7 +49,6 @@ body {
     color: white;
     transition: .5s all;
 }
-
 
 .ul-header li {
     display: flex;
@@ -81,15 +92,22 @@ body {
     gap: 25px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1050px) {
     .container-header {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 }
 
-@media (max-width: 860px) {
+/* @media (max-width: 960px) {
     .container-header {
-        font-size: .8rem;
+        font-size: 1rem;
+    }
+} */
+
+
+@media (max-width: 840px) {
+    .container-header {
+        font-size: .7rem;
     }
 }
 
@@ -118,6 +136,7 @@ body {
     align-items: center;
     width: 40px;
     height: 30px;
+    z-index: 999;
 }
 
 .burger-label {
@@ -130,6 +149,7 @@ body {
 
 .nav-header {
     transition: .5s all;
+    position: relative;
 }
 
 
@@ -141,8 +161,8 @@ body {
         left: 0;
         right: 0;
         background-color: #151515;
-        padding-top: 100px;
-        z-index: -1;
+        padding-top: 35px;
+        z-index: 10;
         flex-direction: column;
         text-align: center;
         top: -100vh;
@@ -160,6 +180,8 @@ body {
     .container-header {
         justify-content: space-between;
     }
+
+
 
     .burger {
         display: flex;
@@ -251,4 +273,17 @@ body {
 .text-block-div {
     border: 1px solid orange;
     width: 300px;
+}
+
+
+
+/* GENERAL STYLE */
+
+.text {
+    font-family: sans-serif;
+    color: white;
+}
+
+.pb-2 {
+    padding-bottom: 2px
 }

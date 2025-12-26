@@ -39,33 +39,37 @@
         </section>
     </header>
     <main>
-        <section class="container">
-            <h2>Авторизация</h2>
-    
+        <section class="container form-conteiner">
+            <h2 class="white-word p-30">Авторизация</h2>
+
             <article class="form">
                         <form action="#" method="post" class="form__section">
                             <div class="form__field">
+                                <label for="email" class="text">Email</label>
+
                                 <input class="form-control is-invalid" id="email" name="email" type="email" placeholder="E-mail *" value="abiba">
-                                <div class="invalid__feedback">
+                                <!-- <div class="invalid__feedback">
                                     <p>Некорректный e-mail адрес</p>
                                 </div>
                                 <div class="valid__feedback">
                                     <p>Пример успеха</p>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="form__field">
+                                <label for="password" class="text">Пароль</label>
                                 <input class="form-control" id="password" name="password" type="password" placeholder="Пароль *">
-                                <div class="invalid__feedback">
+                                <!-- <div class="invalid__feedback">
                                     <p>Пример ошибки</p>
                                 </div>
                                 <div class="valid__feedback">
                                     <p>Пример успеха</p>
-                                </div>
+                                </div> -->
                             </div>
                             
-                            
-                            
                             <input type="submit" value="Зарегистрироваться" class="send-form primary">
+
+                            <hr class="line">
+                            <p class="non-account">Забыли пароль? <a href="">Восстановить</a></p>
                         </form>
                     </article>
         </section>

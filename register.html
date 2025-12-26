@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru-RU">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/index.css">
-    <script src="assets/index.js"></script>
+    <link rel="stylesheet" href="assets/css/register.css">
 </head>
 
 <body>
@@ -38,20 +38,40 @@
         </section>
     </header>
     <main>
-        <!-- <section class="container">
-            <div class="list">
-                <ul class="spisok">
-                    <li class="li">Привлекательные цены</li>
-                    <li class="li">Ежемесячные акции</li>
-                    <li class="li">Круглосуточная поддержка</li>
-                    <li class="li">Быстрая покупка</li>
-                </ul>
-            </div>
-            <div class="text-block-div">
-                <p class="text-block"></p>
-            </div>
-        </section> -->
+        <section class="container form-conteiner">
+            <h2 class="white-word p-30">Регистрация</h2>
 
+            <article class="form">
+                        <form action="#" method="post" class="form__section">
+                            <div class="container-part">
+                                <div class="form__field">
+                                    <input class="form-control is-invalid" id="email" name="email" type="email" placeholder="E-mail" value="abiba">
+                                </div>
+                                <div class="form__field">
+                                    <input class="form-control" id="surname" name="surname" type="surname" placeholder="Фамилия">
+                                </div>
+                                <div class="form__field">
+                                    <input class="form-control" id="name" name="name" type="name" placeholder="Имя ">
+                                </div>
+                                <div class="form__field">
+                                    <input class="form-control" id="birth" name="birth" type="date" placeholder="Дата Рождения">
+                                </div>
+                            </div>
+                            <div class="container-part">
+                                <div class="form__field">
+                                    <input class="form-control" id="phone" name="phone" type="phone" placeholder="Номер телефона">
+                                </div>
+                                <div class="form__field">
+                                    <input class="form-control" id="password" name="password" type="password" placeholder="Пароль">
+                                </div>
+                                <div class="form__field">
+                                    <input class="form-control" id="password_repeat" name="password_repeat" type="password" placeholder="Повтор пароль">
+                                </div>
+                                <input type="submit" value="Войти" class="send-form primary">
+                            </div>
+                        </form>
+                    </article>
+        </section>
     </main>
     <footer>
 
