@@ -89,3 +89,7 @@
 .form-control:focus {
     outline: 2.5px solid rgb(255, 195, 83)
 }
+
+.field-image {
+    padding: 10px;
+}

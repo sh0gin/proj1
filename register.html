@@ -42,39 +42,105 @@
             <h2 class="white-word p-30">Регистрация</h2>
 
             <article class="form">
-                        <form action="#" method="post" class="form__section">
-                            <div class="container-part">
-                                <div class="form__field">
-                                    <input class="form-control is-invalid" id="email" name="email" type="email" placeholder="E-mail" value="abiba">
-                                </div>
-                                <div class="form__field">
-                                    <input class="form-control" id="surname" name="surname" type="surname" placeholder="Фамилия">
-                                </div>
-                                <div class="form__field">
-                                    <input class="form-control" id="name" name="name" type="name" placeholder="Имя ">
-                                </div>
-                                <div class="form__field">
-                                    <input class="form-control" id="birth" name="birth" type="date" placeholder="Дата Рождения">
-                                </div>
-                            </div>
-                            <div class="container-part">
-                                <div class="form__field">
-                                    <input class="form-control" id="phone" name="phone" type="phone" placeholder="Номер телефона">
-                                </div>
-                                <div class="form__field">
-                                    <input class="form-control" id="password" name="password" type="password" placeholder="Пароль">
-                                </div>
-                                <div class="form__field">
-                                    <input class="form-control" id="password_repeat" name="password_repeat" type="password" placeholder="Повтор пароль">
-                                </div>
-                                <input type="submit" value="Войти" class="send-form primary">
-                            </div>
-                        </form>
-                    </article>
+                <form action="#" method="post" class="form__section">
+                    <div class="container-part">
+
+                        <div class="form__field">
+                            <label for="surname" class="text">Фамилия</label>
+
+                            <input class="form-control" id="surname" name="surname" type="surname"
+                                placeholder="Фамилия">
+                        </div>
+                        <div class="form__field">
+                            <label for="name" class="text">Имя</label>
+                            <input class="form-control" id="name" name="name" type="name" placeholder="Имя ">
+                        </div>
+                    </div>
+                    <div class="container-part">
+                        <div class="form__field">
+                            <label for="email" class="text">Email</label>
+                            <input class="form-control is-invalid" id="email" name="email" type="email"
+                                placeholder="E-mail" value="abiba">
+                        </div>
+                        <div class="form__field">
+                            <label for="birth" class="text">Дата рождения</label>
+                            <input class="form-control" id="birth" name="birth" type="date" placeholder="Дата Рождения">
+                        </div>
+                    </div>
+                    <div class="container-part">
+                        <div class="form__field">
+                            <label for="phone" class="text">Телефон</label>
+                            <input class="form-control" id="phone" name="phone" type="phone"
+                                placeholder="Номер телефона">
+                        </div>
+                    </div>
+                    <div class="container-part">
+                        <div class="form__field">
+                            <label for="password" class="text">Пароль</label>
+                            <input class="form-control" id="password" name="password" type="password"
+                                placeholder="Пароль">
+                        </div>
+                        <div class="form__field">
+                            <label for="password_repeat" class="text">Повтор пароля</label>
+                            <input class="form-control" id="password_repeat" name="password_repeat" type="password"
+                                placeholder="Повтор пароль">
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <input class="" id="check" name="check" type="checkbox">
+                        <label for="check" class="text">Нажимая зарегистрироваться, вы подтверждаете своё согласие, на обработку персональных данных</label>
+                    </div>
+                    <input type="submit" value="Войти" class="send-form primary">
+                </form>
+            </article>
         </section>
     </main>
     <footer>
+        <section class="container footer-conteiner text">
+            <div class="content">
+                <div class="footer-block">
+                    <h3>Контакты</h3>
+                    <div class="d-column g-7">
+                        <p>Телефон (8-800-999-55-99)</p>
+                        <p>e-mail: best@games.ru</p>
+                    </div>
+                </div>
 
+                <div class="footer-block">
+                    <h3>Компания</h3>
+                    <div class="d-column g-7">
+                        <div class="d-flex">
+                            <p>Клиентам</p>
+                            <p>Партнёрам</p>
+                        </div>
+                        <div class="d-flex">
+                            <p>О нас</p>
+                            <p>Контакты</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer-block">
+                    <h3>Навигация</h3>
+                    <div class="d-column g-7">
+                        <div class="d-flex">
+                            <p>Главная</p>
+                            <p>Личный кабинет</p>
+                        </div>
+                        <div class="d-flex">
+                            <p>Регистрация</p>
+                            <p>Поиск</p>
+                        </div>
+                        <div>
+                            <p>Авторизация</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
     </footer>
 </body>
 

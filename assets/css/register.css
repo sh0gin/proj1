@@ -16,8 +16,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
-    width: 40%;
+    padding-top: 35px;
+    width: 60%;
 }   
 
 .form-control {
@@ -26,21 +26,27 @@
     padding-left: 10px;
     border-radius: 8px;
     border: none;
+    transition: outline .2s;
+}
+
+.form-control:focus {
+    outline: 2.5px solid rgb(255, 195, 83)
 }
 
 .form__section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 30px;
     width: 100%;
 }
 
 .form__field {
     width: 100%;
-    max-width: 300px;
     min-width: 260px;
 }
+
 
 .p-30 {
     padding-top: 30px;
@@ -51,8 +57,10 @@
     height: 45px;
     border: transparent;
     border-radius: 8px;
-    transition: .6s;
-    max-width: 220px;
+    transition: .3s;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    /* max-width: 260px; */
 }
 
 .send-form:hover {
@@ -83,6 +91,27 @@
 
 .container-part {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+    width: 100%;
+}
+
+@media (max-width: 888px) {
+    .container-part {
+        flex-direction: column;
+        width: auto;
+        gap: 20px;
+    }
+
+    .form__section {
+        gap: 20px;
+    }
+
+    .send-form {
+        max-width: 230px;
+    }
+
+    .form__section {
+        max-width: 260px;
+    }
 }

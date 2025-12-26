@@ -259,7 +259,7 @@ body {
 /* MAIN START */
 /* остановился тут */
 .container {
-    width: var(--containerWidth); 
+    width: var(--containerWidth);
     margin-inline: auto;
 }
 
@@ -286,4 +286,73 @@ body {
 
 .pb-2 {
     padding-bottom: 2px
+}
+
+.form-control {
+    margin-top: 3px;
+}
+
+
+/* MAIN START */
+
+main {
+    height: 90vh;
+}
+
+/* FOOTER START */
+
+.footer-conteiner {
+    width: 100%;
+    min-height: 120px;
+    border-top: 1px solid grey;
+    font-size: .6rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-block p {
+    width: 110px;
+}
+
+.footer-block h3 {
+    padding-bottom: 12px;
+    font-size: 1.5rem;
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+.g-10 {
+    gap: 10px;
+}
+
+.g-7 {
+    gap: 7px;
+}
+
+.d-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    gap: 10px;
+}
+
+@media (max-width: 840px) {
+    .footer-block {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
 }

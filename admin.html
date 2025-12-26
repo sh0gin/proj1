@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/index.css">
-    <script src="assets/index.js"></script>
+    <link rel="stylesheet" href="assets/css/admin.css">
 </head>
 
 <body>
@@ -38,23 +38,91 @@
         </section>
     </header>
     <main>
-        <!-- <section class="container">
-            <div class="list">
-                <ul class="spisok">
-                    <li class="li">Привлекательные цены</li>
-                    <li class="li">Ежемесячные акции</li>
-                    <li class="li">Круглосуточная поддержка</li>
-                    <li class="li">Быстрая покупка</li>
-                </ul>
-            </div>
-            <div class="text-block-div">
-                <p class="text-block"></p>
-            </div>
-        </section> -->
+        <section class="container form-conteiner">
+            <h2 class="white-word p-30">Административная панель</h2>
+
+            <article class="form">
+                <form action="#" method="post" class="form__section">
+                    <div class="form__field">
+                        <label for="email" class="text">Название игры</label>
+
+                        <input class="form-control is-invalid" id="email" name="email" type="email"
+                            placeholder="E-mail *" value="abiba">
+                    </div>
+                    <div class="form__field">
+                        <label for="gengres" class="text">Жанр</label>
+                        <input class="form-control" id="gengres" name="gengres" type="text" placeholder="Жанр">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="developer" class="text">Компания-разработчик</label>
+                        <input class="form-control" id="developer" name="developer" type="text"
+                            placeholder="Компания-разработчик">
+                    </div>
+                    <div class="form__field">
+                        <label for="described" class="text">Описание</label>
+                        <input class="form-control" id="described" name="described" type="text" placeholder="Описание">
+                    </div>
+                    <div class="form__field">
+                        <label for="price" class="text">Стоимость</label>
+                        <input class="form-control" id="price" name="price" type="text" placeholder="Стоимость">
+                    </div>
+                    <div class="form__field">
+                        <label for="image" class="text">Изоражение</label>
+                        <input class="form-control field-image" id="image" name="image" type="file">
+                    </div>
+                    <input type="submit" value="Добавить" class="send-form primary">
+                </form>
+            </article>
+        </section>
 
     </main>
     <footer>
+        <section class="container footer-conteiner text">
+            <div class="content">
+                <div class="footer-block">
+                    <h3>Контакты</h3>
+                    <div class="d-column g-7">
+                        <p>Телефон (8-800-999-55-99)</p>
+                        <p>e-mail: best@games.ru</p>
+                    </div>
+                </div>
 
+                <div class="footer-block">
+                    <h3>Компания</h3>
+                    <div class="d-column g-7">
+                        <div class="d-flex">
+                            <p>Клиентам</p>
+                            <p>Партнёрам</p>
+                        </div>
+                        <div class="d-flex">
+                            <p>О нас</p>
+                            <p>Контакты</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer-block">
+                    <h3>Навигация</h3>
+                    <div class="d-column g-7">
+                        <div class="d-flex">
+                            <p>Главная</p>
+                            <p>Личный кабинет</p>
+                        </div>
+                        <div class="d-flex">
+                            <p>Регистрация</p>
+                            <p>Поиск</p>
+                        </div>
+                        <div>
+                            <p>Авторизация</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
     </footer>
 </body>
 
