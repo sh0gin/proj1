@@ -1,0 +1,27 @@
+.container {
+    font-family: sans-serif;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.catalog {
+    padding-top: 35px;
+    width: 90%;
+    display: grid;
+    gap: 24px 12px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    grid-auto-flow: row;
+}
+
+.one-game {
+    width: 140px;
+    min-height: 380px;
+    max-width: 310px;
+    height: 240px;
+    background-color: white;
+}
