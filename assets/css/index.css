@@ -1,3 +1,5 @@
+/* rgb(99, 141, 255) */
+/* rgb(255, 195, 83) */
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +52,7 @@ body {
     height: 80px;
     border-bottom: 1px solid grey;
     padding: 0 15px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .ul-header li a {
@@ -74,7 +76,7 @@ body {
 .ul-header li:hover {
     cursor: pointer;
     color: blue;
-    scale: 1.1;
+    scale: 1.08;
     border-bottom: 1px solid rgba(134, 134, 134, 0.5);
 }
 
@@ -333,7 +335,7 @@ body {
 
 .footer-block a:hover {
     cursor: pointer;
-    color: rgb(255, 195, 83);
+    color: rgb(99, 141, 255);
 }
 
 .footer-block h3 {
@@ -370,7 +372,6 @@ body {
 
 .title {
     padding-bottom: 30px;
-
 }
 
 @media (max-width: 840px) {
@@ -382,4 +383,12 @@ body {
         flex-direction: column;
         gap: 20px;
     }
+}
+
+footer {
+    background-color: black
+}
+
+.inline {
+    display: inline-block
 }

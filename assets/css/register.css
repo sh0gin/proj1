@@ -30,7 +30,7 @@
 }
 
 .form-control:focus {
-    outline: 2.5px solid rgb(255, 195, 83)
+    outline: 2.5px solid rgb(99, 141, 255)
 }
 
 .form__section {
@@ -65,7 +65,7 @@
 
 .send-form:hover {
     cursor: pointer;
-    background-color: rgb(255, 195, 83);
+    background-color: rgb(99, 141, 255);
 }
 
 .line {
@@ -87,8 +87,8 @@
 
 .non-account a:hover {
     cursor: pointer;
-    color: rgb(255, 195, 83);
-    border-bottom: 1px solid rgb(255, 195, 83);
+    color: rgb(99, 141, 255);
+    border-bottom: 1px solid rgb(99, 141, 255);
 }
 
 .container-part {
