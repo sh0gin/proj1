@@ -58,6 +58,7 @@
 }
 
 .send-form:hover {
+    cursor: pointer;
     background-color: rgb(255, 195, 83);
 }
 
@@ -83,6 +84,7 @@
 }
 
 .non-account a:hover {
+    cursor: pointer;
     color: rgb(255, 195, 83);
     border-bottom: 1px solid rgb(255, 195, 83);
 }

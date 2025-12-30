@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    padding-top: 30px;
+    margin-top: auto;
+}
+
 :root {
     --containerWidth:
 }
@@ -61,6 +72,7 @@ body {
 }
 
 .ul-header li:hover {
+    cursor: pointer;
     color: blue;
     scale: 1.1;
     border-bottom: 1px solid rgba(134, 134, 134, 0.5);
@@ -82,6 +94,7 @@ body {
 }
 
 .li:hover {
+    cursor: pointer;
     border: 1px solid grey;
     border-radius: 2px;
     transform: scaleX(1.2);
@@ -118,6 +131,7 @@ body {
     }
 
     .li:hover {
+        cursor: pointer;
         color: red;
         border: 1px solid grey;
 
@@ -295,23 +309,31 @@ body {
 
 /* MAIN START */
 
-main {
-    /* height: 90vh; */
-}
-
 /* FOOTER START */
 
 .footer-conteiner {
     width: 100%;
     min-height: 120px;
     border-top: 1px solid grey;
-    font-size: .6rem;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: auto;
 }
 
 .footer-block p {
     width: 110px;
+}
+
+.footer-block a {
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+    transition: color .3s;
+}
+
+.footer-block a:hover {
+    cursor: pointer;
+    color: rgb(255, 195, 83);
 }
 
 .footer-block h3 {
@@ -344,6 +366,11 @@ main {
     justify-content: space-between;
     align-items: top;
     gap: 10px;
+}
+
+.title {
+    padding-bottom: 30px;
+
 }
 
 @media (max-width: 840px) {
