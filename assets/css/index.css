@@ -365,9 +365,11 @@ body {
     width: 90%;
     margin-inline: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: row;
     align-items: top;
-    gap: 10px;
+    gap: 25px;
 }
 
 .title {
@@ -376,12 +378,12 @@ body {
 
 @media (max-width: 840px) {
     .footer-block {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .content {
-        flex-direction: column;
-        gap: 20px;
+        /* flex-direction: column;
+        gap: 20px; */
     }
 }
 
