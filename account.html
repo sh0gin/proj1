@@ -27,7 +27,9 @@
                     <li><a href="account.html">Личный кабинет</a></li>
                     <li><a href="catalog.html">Каталог игр</a></li>
                     <li><a href="admin.html">Административная панель</a></li>
-                    <li><a href="light.html">light</a></li>
+                    <li><a href="light.html">
+                            <div class="background-light-image"></div>
+                        </a></li>
                     <li><a href="register.html">Регистрация</a></li>
                     <li><a href="login.html">Вход</a></li>
                 </ul>
@@ -39,8 +41,23 @@
         </section>
     </header>
     <main>
-        <section class="container d-flex g-5">
-            <div class="account-container">
+        <section class="container d-flex g-5 account-container-general">
+            <div class="account-container-mobile">
+                <section>
+                    <section class="top-account-mobile">
+                        <p class="title">Личный кабинет</p>
+                        <p>tigr123655@gmail.com</p>
+                        <p>Фролов Егор Алексеевич</p>
+                        <p>05.03.2007</p>
+                        <p>+7 (932) 232 2343</p>
+                    </section>
+                    <section class="down-account">
+                        <a href="index.html">Сменить пароль</a>
+                        <a href="light.html" class="bg-white black">Светлая тема</a>
+                    </section>
+                </section>
+            </div>
+            <!-- <div class="account-container">
                 <section>
                     <section class="top-account">
                         <p class="title">Личный кабинет</p>
@@ -51,20 +68,46 @@
                     </section>
                     <section class="down-account">
                         <a href="index.html">Сменить пароль</a>
-                        <a href="index.html" class="bg-white black">Светлая тема</a>
+                        <a href="light.html" class="bg-white black">Светлая тема</a>
                     </section>
                 </section>
-            </div>
+            </div> -->
             <section class="history-section">
                 <div class="inline">
-                    <span class="title">История</span>
+                    <span class="title p-30">История покупок</span>
                 </div>
+
+                <section class="catalog">
+                    <article class="one-game">
+                        <img class='picture-product' src="assets/image/fbimg.jpg" alt="изображение товара">
+
+                        <div class='one-game-container'>
+                            <div class="one-game-container-top">
+                                <p class="gold">Unrave two</p>
+                                <p>08/12/2023 | 3000 &#8381;</p>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="one-game">
+                        <img class='picture-product' src="assets/image/maincraft.jpg" alt="изображение товара">
+
+                        <div class='one-game-container'>
+                            <div class="one-game-container-top">
+                                <p class="gold">Minecraft</p>
+                                <p>12/02/2025 | 2300 &#8381;</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+
             </section>
         </section>
 
 
     </main>
-        <footer>
+    <footer>
         <section class="container footer-conteiner text">
             <div class="content">
                 <div class="footer-block">

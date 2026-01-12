@@ -9,46 +9,6 @@
     gap: 30px;
 }
 
-.filter {
-    margin-top: 35px;
-    width: 200px;
-    height: 365px;
-    background-color: rgb(189, 189, 189);
-    border-radius: 8px;
-}
-
-.filter-buttom {
-    display: flex;
-    justify-content: center;
-}
-
-.filter-buttom button {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    padding: 7px;
-    margin-top: 3px;
-    border: none;
-    border-radius: 8px;
-    transition: .3s;
-    background-color: white;
-}
-
-.filter-buttom button:hover {
-    background-color: rgb(99, 141, 255);
-    cursor: pointer;
-}
-
-.filter-conteiner {
-    width: 90%;
-    margin-inline: auto;
-    padding-top: 10px;
-}
-
-.genre {
-    text-align: center;
-    padding-bottom: 35px;
-}
 
 .container {
     display: flex;
@@ -62,41 +22,44 @@
     display: flex;
     flex-direction: column;
     gap: 135px;
+    align-items: center;
 }
 
 .catalog {
     padding-top: 35px;
     width: 90%;
     display: grid;
-    gap: 24px 12px;
+    gap: 34px 23px;
     grid-template-columns: repeat(auto-fit, minmax(270px, 310px));
     grid-auto-flow: row;
     justify-content: center;
     /* !!!!!!!!! */
 }
 
+/* CARD START :) */
+
 .one-game {
     height: 365px;
+    background-color: rgb(29, 27, 27);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 45% 55%;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 45% 55%;
-    color: black;
-    transition: .6s scale;
-    background-color: rgb(228, 228, 228)
+    color: rgb(255, 255, 255);
+    transition: .3s;
+    border-radius: 20px;
+    border: .8px solid white;
 }
 
 .one-game:hover {
     transform: scale(1.07);
+    border: 2px solid rgb(99, 141, 255);
 }
 
 .picture-product {
     width: 100%;
     height: 150px;
     object-fit: cover;
+    border-radius: 20px 20px 0 0;
 }
 
 .one-game-container {
@@ -132,19 +95,101 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5.5px;
+    gap: 8.5px;
+}
+/* CARD END */
+
+/* FILTER STYLE START*/
+
+.filter {
+    margin-top: 35px;
+    width: 200px;
+    height: 365px;
+    /* background-color: rgb(189, 189, 189); */
+    border-radius: 8px;
 }
 
-.filter-checkbox {
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background-color: rgb(255, 255, 255);
+.filter-buttom {
+    display: flex;
+    justify-content: center;
+}
+
+.center-filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-buttom button {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 7px;
+    margin-top: 3px;
+    border: none;
+    border-radius: 8px;
+    transition: .3s;
+    background-color: white;
+}
+
+.filter-buttom button:hover {
+    background-color: rgb(99, 141, 255);
     cursor: pointer;
 }
 
-.filter-checkbox:checked {
-    background-color: rgb(99, 141, 255);
+#filter-contain {
+    width: 331px;
+    border: 1px solid grey;
+    border-radius: 22px;
+}
+
+.filter-conteiner {
+    margin-inline: auto;
+    padding-top: 10px;
+}
+
+.genre {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+.filter-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    display: block;
+}
+
+.filter-span {
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+
+.container-elem-filter {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+}
+
+.filter-checkbox:checked + span {
+    background-color: rgb(20, 56, 156);
+}
+
+.filter-checkbox:checked + .strike {
+    background-color: rgb(146, 32, 61);
+}
+
+.filter-checkbox:checked + .adventure {
+    background-color: rgb(12, 109, 17);
 }
 
 /* FILTER BUTTON MOBILE */
@@ -174,11 +219,18 @@
 @media (max-width: 768px) {
     .filter-button-mobile {
         display: block;
-
     }
 
     .filter.active {
         display: block;
+    }
+
+    .filter-conteiner {
+        border-radius: 15px;
+        border: none;
+        position: relative;
+        z-index: -2;
+        backdrop-filter: blur(10px);
     }
 
     .filter {

@@ -26,7 +26,7 @@
                     <li><a href="account.html">Личный кабинет</a></li>
                     <li><a href="catalog.html">Каталог игр</a></li>
                     <li><a href="admin.html">Административная панель</a></li>
-                    <li><a href="light.html">light</a></li>
+                    <li><a href="light.html"><div class="background-light-image"></div></a></li>
                     <li><a href="register.html">Регистрация</a></li>
                     <li><a href="login.html">Вход</a></li>
                 </ul>
@@ -39,7 +39,7 @@
     </header>
     <main>
         <section class="container">
-            <h2 class="text title">Каталог игр</h2>
+            <h2 class="text title">Каталог <span class="blue">игр</span></h2>
             <div class="fitler-button-container">
                 <button class="filter-button-mobile" id="fitler-button">Фильтры</button>
             </div>
@@ -47,25 +47,26 @@
                 <section class="filter" id="filter-contain">
                     <div class="filter-conteiner">
 
-                        <p class="genre">Жанр</p>
+                        <p class="genre title2 white">Жанры</p>
                         <form action="#" class="form-filter-catalog">
-                            <div>
-                                <div>
+                            <div class="container-elem-filter">
+                                <label for="adventure" class="center-filter">
+                                    <input type="checkbox" id="adventure" class="filter-checkbox">
+                                    <span class="filter-span adventure">Приключения</span>
+                                </label>
+                                <label for="action" class="center-filter">
                                     <input type="checkbox" id="action" class="filter-checkbox">
-                                    <label for="action">Приключения</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="word-open" class="filter-checkbox">
-                                    <label for="word-open">Открытый мир</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="game" class="filter-checkbox">
-                                    <label for="game">Экшн-Игра</label>
-                                </div>
+                                    <span class="filter-span">Экшн</span>
+                                </label>
+                                <label for="strike" class="center-filter">
+                                    <input type="checkbox" id="strike" class="filter-checkbox">
+                                    <span class="filter-span strike">Стрелялки</span>
+                                </label>
+                                
                             </div>
-                            <div class="filter-buttom">
+                            <!-- <div class="filter-buttom">
                                 <button type="submit">Применить</button>
-                            </div>
+                            </div> -->
                         </form>
 
                     </div>
@@ -79,10 +80,10 @@
                                 <p>Unrave two</p>
                                 <p>Жанр: Приключения</p>
                                 <p>Разработчик: Компания</p>
-                            </div>
-                            <div>
                                 <p>3600 руб.</p>
                                 <p>★★★★☆</p>
+                            </div>
+                            <div>
                                 <button class="card-button">Подробнее</button>
                             </div>
 
@@ -96,10 +97,10 @@
                                 <p>Minecraft</p>
                                 <p>Жанр: Приключения</p>
                                 <p>Разработчик: Компания</p>
-                            </div>
-                            <div>
                                 <p>900 руб.</p>
                                 <p>★★★★★</p>
+                            </div>
+                            <div>
                                 <button class="card-button">Подробнее</button>
                             </div>
 
@@ -113,10 +114,10 @@
                                 <p>Need For Speef</p>
                                 <p>Жанр: Приключения</p>
                                 <p>Разработчик: Компания</p>
-                            </div>
-                            <div>
                                 <p>1700 руб.</p>
                                 <p>★★★☆☆</p>
+                            </div>
+                            <div>
                                 <button class="card-button">Подробнее</button>
                             </div>
 
@@ -130,10 +131,10 @@
                                 <p>Crossout</p>
                                 <p>Жанр: Приключения</p>
                                 <p>Разработчик: Компания</p>
-                            </div>
-                            <div>
                                 <p>1500 руб.</p>
                                 <p>★★☆☆☆</p>
+                            </div>
+                            <div>
                                 <button class="card-button">Подробнее</button>
                             </div>
 
@@ -147,10 +148,10 @@
                                 <p>Star Wars</p>
                                 <p>Жанр: Приключения</p>
                                 <p>Разработчик: Компания</p>
-                            </div>
-                            <div>
                                 <p>2000 руб.</p>
                                 <p>★★★★☆</p>
+                            </div>
+                            <div>
                                 <button class="card-button">Подробнее</button>
                             </div>
 
@@ -164,10 +165,10 @@
                                 <p>Terraria</p>
                                 <p>Жанр: Открытый мир</p>
                                 <p>Разработчик: MustHaveCompany</p>
-                            </div>
-                            <div>
                                 <p>3500 руб.</p>
                                 <p>★★★★★</p>
+                            </div>
+                            <div>
                                 <button class="card-button">Подробнее</button>
                             </div>
 
@@ -181,10 +182,10 @@
                                 <p>Rocket Liga</p>
                                 <p>Жанр: Экшн-Игра</p>
                                 <p>Разработчик: Psyonix</p>
-                            </div>
-                            <div>
                                 <p>1500 руб.</p>
                                 <p>★★★★☆</p>
+                            </div>
+                            <div>
                                 <button class="card-button">Подробнее</button>
                             </div>
 
@@ -198,10 +199,10 @@
                                 <p>Unrave two</p>
                                 <p>Жанр: Приключения</p>
                                 <p>Разработчик: Компания</p>
-                            </div>
-                            <div>
                                 <p>3600 руб.</p>
                                 <p>★★★★☆</p>
+                            </div>
+                            <div>
                                 <button class="card-button">Подробнее</button>
                             </div>
 

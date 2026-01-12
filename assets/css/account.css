@@ -12,7 +12,7 @@
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 
@@ -44,9 +44,7 @@
     width: 80%
 }
 
-footer {
-    padding: 0px;
-}
+
 
 .bg-white {
     background-color: white !important;
@@ -60,11 +58,130 @@ footer {
 
 .history-section {
     color: white;
-    position: relative;
-    left: 30%;
-    width: 70%;
-    font-family:sans-serif;
     display: flex;
+    font-family: sans-serif;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.inline {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.catalog {
+    padding-top: 35px;
+    display: grid;
+    gap: 34px 23px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 310px));
+    grid-auto-flow: row;
+    justify-content: center;
+    /* !!!!!!!!! */
+}
+
+.one-game {
+    height: 365px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 55%;
+    background-color: rgb(29, 27, 27);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 55%;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+    border-radius: 20px;
+    border: .8px solid white;
+
+}
+
+.one-game:hover {
+    transform: scale(1.07);
+    border: 2px solid rgb(99, 141, 255);
+}
+
+.picture-product {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.one-game-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding-top: 30px;
+}
+
+
+.one-game-container div {
+    text-align: center;
+}
+
+.card-button {
+    width: 60%;
+    padding: 7px;
+    margin-top: 3px;
+    border: none;
+    border-radius: 8px;
+    transition: .3s;
+    background-color: white;
+    font-size: 1rem;
+}
+
+.card-button:hover {
+    background-color: rgb(99, 141, 255);
+    cursor: pointer;
+}
+
+.one-game-container-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    gap: 13px;
+}
+
+
+/* ACCOUNT CONTAINER START */
+
+.account-container-mobile {
+    display: flex;
+    border-bottom: 1px solid grey;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.account-container-general {
+    flex-direction: column;
+    justify-content: center;
+}
+.history-section {
+
+    /* position: static;
+    left: 0;
+    width: 95%; */
+}
+/* ACCOUNT CONTAINER END */
+
+/* MEDIA START */
+
+@media (max-width: 768px) {
+    .account-container-mobile {
+        display: flex;
+    }
+
+    
+    .account-container {
+        display: none;
+    }
+
 }

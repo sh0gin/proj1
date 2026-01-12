@@ -26,11 +26,15 @@
     padding-left: 10px;
     border-radius: 8px;
     border: none;
-    transition: outline .2s;
-}
+    transition: .5s;
+    background-color: #292f35;
+    color: white
+}   
+
 
 .form-control:focus {
-    outline: 2.5px solid rgb(99, 141, 255)
+    outline: 2.5px solid rgb(99, 141, 255);
+    border: none;
 }
 
 .form__section {
@@ -40,6 +44,7 @@
     flex-direction: column;
     gap: 30px;
     width: 100%;
+    position: relative;
 }
 
 .form__field {
@@ -53,14 +58,17 @@
 }
 
 .send-form {
-    width: 100%;
+    width: 80%;
     height: 45px;
     border: transparent;
     border-radius: 8px;
     transition: .3s;
     margin-top: 10px;
     margin-bottom: 30px;
-    /* max-width: 260px; */
+    background-color: rgb(99, 141, 255);
+    /* position: absolute;
+    right: 0;
+    bottom: -115px; */
 }
 
 .send-form:hover {

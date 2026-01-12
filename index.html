@@ -15,18 +15,19 @@
             <a href="index.html">
                 <div class="logo-img" aria-label="логотип компании"></div>
             </a>
-            <input id='burger-toggle' type="checkbox">
-            <label for="burger-toggle" class="burger-label">
-                <span class="burger-span"></span>
-            </label>
+
+            <div class="burger-full">
+                <input id='burger-toggle' type="checkbox">
+                <label for="burger-toggle" class="burger-label">
+                    <span class="burger-span"></span>
+                </label>
+            </div>
 
             <nav class="nav-header">
                 <ul class="ul-header">
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html">Поиск</a></li>
                     <li><a href="account.html">Личный кабинет</a></li>
                     <li><a href="catalog.html">Каталог игр</a></li>
-                    <li><a href="admin.html">Административная панель</a></li>
-                    <li><a href="light.html">light</a></li>
                     <li><a href="register.html">Регистрация</a></li>
                     <li><a href="login.html">Вход</a></li>
                 </ul>
@@ -38,28 +39,140 @@
         </section>
     </header>
     <main>
-        <!-- <section class="container">
-            <div class="list">
-                <ul class="spisok">
-                    <li class="li">Привлекательные цены</li>
-                    <li class="li">Ежемесячные акции</li>
-                    <li class="li">Круглосуточная поддержка</li>
-                    <li class="li">Быстрая покупка</li>
-                </ul>
-            </div>
-            <div class="text-block-div">
-                <p class="text-block"></li>
-            </div>
-        </section> -->
+        <section class="container">
+            <section class="pt-10 center column jac pb-35">
+                <span class="pb-35 title42">Главная страница</span>
+                <section class="slider">
+
+                    <section class="slider">
+                        <div class="slide">
+                            <div class="partner-image game1"></div>
+                            <section class="column jac">
+                                <span class="w-50 gold">Minecraft</span>
+                                <p class="main-text-for-slide w-50">Самая продаваемая игра за всю историю нашего
+                                    магазина!</p>
+                            </section>
+                        </div>
+                        <!-- <div class="slide">
+                            <div class="partner-image game1"></div>
+                            <section>
+                                <span class="title w-50">Minecraft</span>
+                                <p class="main-text-for-slide w-50">Самая продаваемая игра за всю историю нашего магазина!</p>
+                            </section>
+                        </div>
+                        <div class="slide">
+                            <div class="partner-image game1"></div>
+                            <section>
+                                <span class="title w-50">Minecraft</span>
+                                <p class="main-text-for-slide w-50">Самая продаваемая игра за всю историю нашего магазина!</p>
+                            </section>
+                        </div> -->
+                        <!-- <div class="slide">
+
+                        </div>
+                        <div class="slide">
+
+                        </div> -->
+                    </section>
+                </section>
+            </section>
+            <section class="border-bottom-25">
+            </section>
+            <section class="pt-10 title2 center column jac pb-35">
+                <span class="pb-35 title42">Быстрый <span class="blue">поиск</span></span>
+                <label class="column jac relative w-60">
+                    <span class="pb-35">Название игры</span>
+                    <input type="search" class="form_control jac row" list="list">
+                    <button class="botton">
+                        <span class="text fs-23">&#9658;</span>
+                    </button>
+                    <datalist id="list">
+                        <option value="1">MineCraft</option>
+                        <option value="2">Grand Theft Auto V</option>
+                        <option value="3">Need For Speef</option>
+                    </datalist>
+                </label>
+            </section>
+            <section class="border-bottom-25">
+            </section>
+            <section class="pt-10 center column jac pb-35">
+                <span class="pb-35 title42"><span class="blue">Популярные</span> игры</span>
+                <section class="catalog">
+                    <article class="one-game">
+                        <img class='picture-product' src="assets/image/fbimg.jpg" alt="изображение товара">
+
+                        <div class='one-game-container'>
+                            <div class="one-game-container-top">
+                                <p>Unrave two</p>
+                                <p>Жанр: Приключения</p>
+                                <p>Разработчик: Компания</p>
+                            </div>
+                            <div>
+                                <p>3600 руб.</p>
+                                <p>★★★★☆</p>
+                                <button class="card-button">Подробнее</button>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="one-game">
+                        <img class='picture-product' src="assets/image/maincraft.jpg" alt="изображение товара">
+
+                        <div class='one-game-container'>
+                            <div class="one-game-container-top">
+                                <p>Minecraft</p>
+                                <p>Жанр: Приключения</p>
+                                <p>Разработчик: Компания</p>
+                            </div>
+                            <div>
+                                <p>900 руб.</p>
+                                <p>★★★★★</p>
+                                <button class="card-button">Подробнее</button>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="one-game">
+                        <img class='picture-product' src="assets/image/speed.jpg" alt="изображение товара">
+
+                        <div class='one-game-container'>
+                            <div class="one-game-container-top">
+                                <p>Need For Speef</p>
+                                <p>Жанр: Приключения</p>
+                                <p>Разработчик: Компания</p>
+                            </div>
+                            <div>
+                                <p>1700 руб.</p>
+                                <p>★★★☆☆</p>
+                                <button class="card-button">Подробнее</button>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                </section>
+            </section>
+            <section class="border-bottom-25">
+            </section>
+            <section class="pt-10 center column jac pb-35">
+                <span class="pb-35 title42">Наши <span class="blue">партнеры</span></span>
+                <section class="partner-container">
+                    <div class="partner-image company1"></div>
+                    <div class="partner-image company2"></div>
+                    <div class="partner-image company3"></div>
+                </section>
+            </section>
+        </section>
 
     </main>
     <footer>
         <section class="container footer-conteiner text">
             <div class="content">
-                <div class="footer-block">
+                <div class="footer-block footer-block-1">
                     <p class="mini-title">Контакты</p>
-                    <div class="d-column g-7">
-                        <li><a href="tel:+78009995599">(8-800-999-55-99)</a></li>
+                    <div class="d-column g-7 jac">
+                        <li><a href="tel:+78009995599">8-800-999-55-99</a></li>
                         <li><a href="mailto:best@games.ru">best@games.ru</a></li>
                     </div>
                 </div>
@@ -100,7 +213,7 @@
 
         </section>
     </footer>
-    
+
 </body>
 
 </html>

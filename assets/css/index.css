@@ -1,5 +1,18 @@
 /* rgb(99, 141, 255) */
 /* rgb(255, 195, 83) */
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +31,9 @@ footer {
 }
 
 :root {
-    --containerWidth:
+    --containerWidth: 90%;
+    --errorRed: #d84545;
+    --successGreen: #69b56f;
 }
 
 body {
@@ -37,22 +52,36 @@ body {
     padding-left: 15px;
 }
 
-/* header {
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    top: 0;
-    left: 0;
-} */
+header {
+    border-bottom: 1px solid grey;
+    position: relative;
+
+}
+
+@media (max-width: 1310px) {
+    .logo-img {
+        position: absolute;
+        left: 20px;
+        top: 15px;
+    }
+
+    .container-header {
+        width: 88% !important;
+        justify-content: end !important;
+    }
+}
 
 .container-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     height: 80px;
-    border-bottom: 1px solid grey;
     padding: 0 15px;
     font-size: 18px;
+    width: 85%;
+    margin-inline: auto;
+
 }
 
 .ul-header li a {
@@ -113,12 +142,6 @@ body {
     }
 }
 
-/* @media (max-width: 960px) {
-    .container-header {
-        font-size: 1rem;
-    }
-} */
-
 
 @media (max-width: 840px) {
     .container-header {
@@ -155,20 +178,16 @@ body {
     z-index: 999;
 }
 
-.burger-label {
-    display: none;
-}
 
 #burger-toggle {
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
 }
 
 .nav-header {
     transition: .5s all;
     position: relative;
 }
-
-
 
 @media (max-width: 768px) {
 
@@ -266,17 +285,64 @@ body {
         top: 80px;
         bottom: 0;
     }
-
-
-
-
 }
 
 /* MAIN START */
-/* остановился тут */
+/* SLIDER START :) */
+
+.slide {
+    width: 50%;
+    height: 100% !important;
+    border: .8px solid white;
+    border-radius: 20px;
+    scroll-snap-align: start;
+    display: flex;
+}
+
+@media (max-width: 970px) {
+    .slide {
+        width: 80%;
+    }
+}
+
+@media (max-width: 560px) {
+    .slide {
+        width: 90%;
+    }
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+
+.game1 {
+    background-image: url('../image/high-mine.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0 0 20px;
+    width: 60% !important;
+    padding: 10px;
+    position: relative;
+    left: 10px;
+}
+
+.main-text-for-slide {
+    text-align: center;
+}
+
+/* SLIDER END :) */
+
 .container {
     width: var(--containerWidth);
     margin-inline: auto;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 10px;
 }
 
 .spisok {
@@ -291,25 +357,153 @@ body {
     width: 300px;
 }
 
-
-
-/* GENERAL STYLE */
-
-.text {
-    font-family: sans-serif;
-    color: white;
+.form_control {
+    width: 100%;
 }
 
-.pb-2 {
-    padding-bottom: 2px
+.form_control {
+    height: 55px;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: none;
 }
 
-.form-control {
+.form_control:focus {
+    outline: 2px solid rgb(99, 141, 255);
+}
+
+.botton {
+    width: 55px;
+    height: 55px;
+    background-color: rgb(99, 141, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 20px 20px 0;
+    border: none
+}
+
+/* CARS START :) */
+.catalog {
+    padding-top: 35px;
+    width: 90%;
+    display: grid;
+    gap: 34px 23px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 310px));
+    grid-auto-flow: row;
+    justify-content: center;
+    /* !!!!!!!!! */
+}
+
+.one-game {
+    height: 365px;
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 55%;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+    border-radius: 20px;
+    border: .8px solid white;
+}
+
+.one-game:hover {
+    transform: scale(1.07);
+    border: 2px solid rgb(99, 141, 255);
+}
+
+.picture-product {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.one-game-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.one-game-container div {
+    text-align: center;
+}
+
+.card-button {
+    width: 60%;
+    padding: 7px;
     margin-top: 3px;
+    border: none;
+    border-radius: 8px;
+    transition: .3s;
+    background-color: white;
+    font-size: 1rem;
 }
 
+.card-button:hover {
+    background-color: rgb(99, 141, 255);
+    cursor: pointer;
+}
 
-/* MAIN START */
+.one-game-container-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.5px;
+}
+
+/* CARD END */
+/* PARTNER START */
+
+.partner-container {
+    display: flex;
+    gap: 30px;
+}
+
+.partner-image {
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .35s;
+}
+
+.company1 {
+    background-image: url('../image/company1.jpg');
+}
+
+.company1:hover {
+    box-shadow: 0 0 20px 8px rgba(233, 162, 30, 0.6);
+    transform: scale(1.06);
+}
+
+.company2 {
+    background-image: url('../image/company2.jpg');
+}
+
+.company2:hover {
+    box-shadow: 0 0 20px 8px rgba(30, 169, 233, 0.6);
+    transform: scale(1.06);
+}
+
+.company3 {
+    background-image: url('../image/company3.jpg');
+}
+
+.company3:hover {
+    box-shadow: 0 0 20px 8px rgba(255, 7, 49, 0.6);
+    transform: scale(1.06);
+}
+
+/* PARTNER END */
+
+/* MAIN END */
 
 /* FOOTER START */
 
@@ -340,6 +534,93 @@ body {
     color: rgb(99, 141, 255);
 }
 
+footer {
+    background-color: rgb(29, 27, 27);
+    padding-top: 15px;
+}
+
+.inline {
+    display: inline-block
+}
+
+.background-light-image {
+    background-image: url("../image/light.png");
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    position: relative;
+    background-size: cover;
+}
+
+.footer-block-1 {
+    width: 260px;
+}
+
+.gold {
+    color: #ffd700;
+    font-size: 2rem;
+}
+
+/* FOOTER END */
+/* rgb(230, 230, 230) */
+
+/* GENERAL STYLE */
+
+.w-60 {
+    width: 60%;
+}
+
+.relative {
+    position: relative;
+}
+
+.pb-10 {
+    padding-bottom: 10px
+}
+
+.pb-25 {
+    padding-bottom: 25px !important;
+}
+
+.pb-35 {
+    padding-bottom: 35px !important;
+}
+
+.jac {
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    text-align: center;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.text {
+    font-family: sans-serif;
+    color: white;
+}
+
+.pb-2 {
+    padding-bottom: 2px
+}
+
+.form-control {
+    margin-top: 3px;
+}
+
 .mini-title {
     padding-bottom: 12px;
     font-size: 1.5rem;
@@ -368,7 +649,7 @@ body {
 }
 
 .content {
-    width: 90%;
+    width: 80%;
     margin-inline: auto;
     display: flex;
     flex-wrap: wrap;
@@ -380,26 +661,78 @@ body {
 
 .title {
     padding-bottom: 30px;
-}
-
-@media (max-width: 840px) {
-    .footer-block {
-        /* width: 100%; */
-    }
-
-    .content {
-        /* flex-direction: column;
-        gap: 20px; */
-    }
-}
-
-footer {
-    background-color: rgb(29, 27, 27)
-}
-
-.inline {
-    display: inline-block
+    font-size: 36px !important;
 }
 
 
-/* rgb(230, 230, 230) */
+.title2 {
+    padding-bottom: 10px;
+    font-size: 26px !important;
+}
+
+.title32 {
+    font-size: 32px !important;
+}
+
+.title55 {
+    font-size: 55px !important;
+}
+
+.title42 {
+    font-size: 42px !important;
+}
+
+.white {
+    color: white;
+}
+
+.gold {
+    color: #ffd700;
+    font-size: 2rem;
+}
+
+.blue {
+    color: rgb(99, 141, 255);
+}
+
+.fs-23 {
+    font-size: 23px;
+}
+
+.border-top-bottom {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.border-bottom-25 {
+    border-bottom: 1px solid grey;
+    width: 101vw;
+    position: absolute;
+    left: 0;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.error-text {
+    padding-left: 10px;
+    padding-top: 2px;
+    color: var(--errorRed);
+    font-size: .9rem;
+}
+
+.success-text {
+    padding-left: 10px;
+    padding-top: 2px;
+    color: var(--successGreen);
+    font-size: .9rem;
+}
+
+.form-control.is-invalid {
+    border: 2.5px solid var(--errorRed);
+}
+
+.form-control.is-success {
+    border: 2.5px solid var(--successGreen);
+}

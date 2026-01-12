@@ -176,8 +176,7 @@ body {
         position: fixed;
         left: 0;
         right: 0;
-        background-color: rgb(230, 230, 230)
-;
+        background-color: rgb(230, 230, 230);
         padding-top: 35px;
         z-index: 10;
         flex-direction: column;
@@ -396,9 +395,326 @@ body {
 
 footer {
     background-color: rgb(230, 230, 230)
-
 }
 
 .inline {
     display: inline-block
+}
+
+
+.background-light-image {
+    background-image: url("../image/light.png");
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    position: relative;
+    background-size: cover;
+}
+
+.container {
+    width: var(--containerWidth);
+    margin-inline: auto;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+.spisok {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.text-block-div {
+    border: 1px solid orange;
+    width: 300px;
+}
+
+.form_control {
+    width: 100%;
+}
+
+.form_control {
+    height: 55px;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: none;
+}
+
+.form_control:focus {
+    outline: 2px solid rgb(99, 141, 255);
+}
+
+.botton {
+    width: 55px;
+    height: 55px;
+    background-color: rgb(99, 141, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 20px 20px 0;
+    border: none
+}
+
+/* CARS START :) */
+.catalog {
+    padding-top: 35px;
+    width: 90%;
+    display: grid;
+    gap: 34px 23px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 310px));
+    grid-auto-flow: row;
+    justify-content: center;
+    /* !!!!!!!!! */
+}
+.one-game {
+    height: 365px;
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 55%;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+    border-radius: 20px;
+    border: .8px solid white;
+
+}
+
+.one-game:hover {
+    transform: scale(1.07);
+    border: 2px solid rgb(99, 141, 255);
+}
+
+.picture-product {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.one-game-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.one-game-container div {
+    text-align: center;
+}
+
+.card-button {
+    width: 60%;
+    padding: 7px;
+    margin-top: 3px;
+    border: none;
+    border-radius: 8px;
+    transition: .3s;
+    background-color: white;
+    font-size: 1rem;
+}
+
+.card-button:hover {
+    background-color: rgb(99, 141, 255);
+    cursor: pointer;
+}
+
+.one-game-container-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.5px;
+}
+/* CARD END */
+/* PARTNER START */
+
+.partner-container {
+    display: flex;
+    gap: 30px;
+}
+
+.partner-image {
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .35s;
+}
+
+.company1 {
+    background-image: url('../image/company1.jpg');
+}
+
+.company1:hover {
+    box-shadow: 0 0 20px 8px rgba(233, 162, 30, 0.6);
+    transform: scale(1.06);
+}
+
+.company2 {
+    background-image: url('../image/company2.jpg');
+}
+
+.company2:hover {
+    box-shadow: 0 0 20px 8px rgba(30, 169, 233, 0.6);
+    transform: scale(1.06);
+}
+
+.company3 {
+    background-image: url('../image/company3.jpg');
+}
+
+.company3:hover {
+    box-shadow: 0 0 20px 8px rgba(255, 7, 49, 0.6);
+    transform: scale(1.06);
+}
+
+
+.w-60 {
+    width: 60%;
+}
+
+.relative {
+    position: relative;
+}
+
+.pb-10 {
+    padding-bottom: 10px
+}
+.pb-25 {
+    padding-bottom: 25px !important;
+}
+
+.pb-35 {
+    padding-bottom: 35px !important;
+}
+
+.jac {
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    text-align: center;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.text {
+    font-family: sans-serif;
+    color: white;
+}
+
+.pb-2 {
+    padding-bottom: 2px
+}
+
+.form-control {
+    margin-top: 3px;
+}
+
+.mini-title {
+    padding-bottom: 12px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.g-10 {
+    gap: 10px;
+}
+
+.g-7 {
+    gap: 7px;
+}
+
+.d-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.content {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: top;
+    gap: 25px;
+}
+
+.title {
+    padding-bottom: 30px;
+    font-size: 36px !important;
+}
+
+
+.title2 {
+    padding-bottom: 10px;
+    font-size: 26px !important;
+}
+
+.title32 {
+    font-size: 32px !important;
+}
+
+.title55 {
+    font-size: 55px !important;
+}
+
+.title42 {
+    font-size: 42px !important;
+}
+
+.white {
+    color: white;
+}
+
+.gold {
+    color: #ffd700;
+    font-size: 36px;
+}
+
+.fs-23 {
+    font-size: 23px;
+}
+
+.border-top-bottom {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.border-bottom-25 {
+    border-bottom: 1px solid grey;
+    width: 101vw;
+    position: absolute;
+    left: 0;
+}
+
+.w-50 {
+    width: 50%;
 }

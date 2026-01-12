@@ -26,7 +26,9 @@
                     <li><a href="account.html">Личный кабинет</a></li>
                     <li><a href="catalog.html">Каталог игр</a></li>
                     <li><a href="admin.html">Административная панель</a></li>
-                    <li><a href="light.html">light</a></li>
+                    <li><a href="light.html">
+                            <div class="background-light-image"></div>
+                        </a></li>
                     <li><a href="register.html">Регистрация</a></li>
                     <li><a href="login.html">Вход</a></li>
                 </ul>
@@ -39,7 +41,7 @@
     </header>
     <main>
         <section class="container form-conteiner">
-            <h2 class="white-word p-30">Регистрация</h2>
+            <h2 class="white-word p-30 title">Регистрация</h2>
 
             <article class="form">
                 <form action="#" method="post" class="form__section">
@@ -48,8 +50,9 @@
                         <div class="form__field">
                             <label for="surname" class="text">Фамилия</label>
 
-                            <input class="form-control" id="surname" name="surname" type="surname"
+                            <input class="form-control is-invalid" id="surname" name="surname" type="surname"
                                 placeholder="Фамилия">
+                            <div class="error-text">Пустое поле</div>
                         </div>
                         <div class="form__field">
                             <label for="name" class="text">Имя</label>
@@ -59,8 +62,9 @@
                     <div class="container-part">
                         <div class="form__field">
                             <label for="email" class="text">Email</label>
-                            <input class="form-control is-invalid" id="email" name="email" type="email"
-                                placeholder="E-mail" value="abiba">
+                            <input class="form-control is-success" id="email" name="email" type="email"
+                            placeholder="E-mail" value="abiba">
+                            <div class="success-text">Email подходит</div>
                         </div>
                         <div class="form__field">
                             <label for="birth" class="text">Дата рождения</label>
@@ -88,14 +92,15 @@
                     </div>
                     <div class="form__field">
                         <input class="" id="check" name="check" type="checkbox">
-                        <label for="check" class="text">Нажимая зарегистрироваться, вы подтверждаете своё согласие, на обработку персональных данных</label>
+                        <label for="check" class="text">Нажимая зарегистрироваться, вы подтверждаете своё согласие, на
+                            обработку персональных данных</label>
                     </div>
                     <input type="submit" value="Войти" class="send-form primary">
                 </form>
             </article>
         </section>
     </main>
-<footer>
+    <footer>
         <section class="container footer-conteiner text">
             <div class="content">
                 <div class="footer-block">
